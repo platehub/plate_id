@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "lib/plate_id/version"
-
 Gem::Specification.new do |spec|
   spec.name          = "plate_id"
   spec.version       = "0.0.0"
@@ -9,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["kobus@getplate.com"]
   spec.homepage      = "https://www.getplate.com"
 
-  s.summary          = "Refer to any Plate object or class by using the URI syntax: plateid://Group/Class/id"
-  s.description      = "Identify any Plate record or class with URIs. Somewhat based on Rails's GlobalID gem."
+  spec.summary       = "Refer to any Plate object or class by using the URI syntax: plateid://Group/Class/id"
+  spec.description   = "Identify any Plate record or class with URIs. Somewhat based on Rails's GlobalID gem."
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
