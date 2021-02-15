@@ -64,8 +64,8 @@ RSpec.describe URI::PlateID do
       "Ngn::Theming::ThemeFile" => "Theming/ThemeFile",
       "Ngn::Theming::Prerender" => "Theming/Prerender",
 
-      "Ngn::Auth::User" => "Auth/User",
-      "Ngn::Auth::ApiIntegration" => "Auth/ApiIntegration",
+      "Org::Auth::User" => "Auth/User",
+      "Api::Integration" => "Auth/ApiIntegration",
 
       "Org::Company" => "Organization/Company",
       "Org::Partner" => "Organization/Partner",

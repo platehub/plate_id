@@ -34,10 +34,10 @@ module URI
       "Ngn::Theming::ThemeFile" => { host: "Theming", base_class: "ThemeFile" },
       "Ngn::Theming::Prerender" => { host: "Theming", base_class: "Prerender" },
 
-      "Ngn::Auth::User" => { host: "Auth", base_class: "User" },
-      "Ngn::Auth::ApiIntegration" => { host: "Auth", base_class: "ApiIntegration" },
+      "Org::Auth::User" => { host: "Auth", base_class: "User" },
+      "Api::Integration" => { host: "Auth", base_class: "ApiIntegration" },
 
-      "Ngn::Auth::AccessControl::Policy" => { host: "AccessControl", base_class: "Policy" },
+      # "Ngn::Auth::AccessControl::Policy" => { host: "AccessControl", base_class: "Policy" },
 
       "Org::Company" => { host: "Organization", base_class: "Company" },
       "Org::Partner" => { host: "Organization", base_class: "Partner" },
