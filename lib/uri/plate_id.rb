@@ -1,3 +1,5 @@
+require 'cgi'
+
 module URI
   class PlateID < Generic
 
@@ -37,11 +39,12 @@ module URI
       "Org::Auth::User" => { host: "Auth", base_class: "User" },
       "Api::Integration" => { host: "Auth", base_class: "ApiIntegration" },
 
-      # "Ngn::Auth::AccessControl::Policy" => { host: "AccessControl", base_class: "Policy" },
-
       "Org::Company" => { host: "Organization", base_class: "Company" },
       "Org::Partner" => { host: "Organization", base_class: "Partner" },
-      "Org::FormMessage" => { host: "Organization", base_class: "FormMessage" }
+      "Org::FormMessage" => { host: "Organization", base_class: "FormMessage" },
+
+      # Access control
+      "AccessControl::Policy" => { host: "AccessControl", base_class: "Policy" }
     }
 
     attr_reader :base_class, :id
@@ -67,13 +70,13 @@ module URI
 
       # Create a new URI::PlateID from components with argument check.
       #
-      # The allowed components are app, model_name, model_id and params, which
+      # The allowed components are model_name and model_id, which
       # can be either a hash or an array.
       #
       # Using a hash:
       #
       #   URI::PlateID.build(
-      #     model_name: 'Ngn::ContentModelElementType',
+      #     model_name: 'Ngn::ContentModel::ElementType',
       #     model_id: '1'
       #   )
       def build(args)
