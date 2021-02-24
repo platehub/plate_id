@@ -9,6 +9,8 @@ module URI
     #
     # The URI format looks like "plateid://group_name/base_class/id".
 
+    attr_writer :id
+
     MAPPING = {
       "Site" => { host: "Base", base_class: "Site" },
       "Ngn::Attachment" => { host: "Base", base_class: "Attachment" },

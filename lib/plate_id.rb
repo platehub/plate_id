@@ -33,6 +33,10 @@ class PlateID
     uri.id
   end
 
+  def id=(id)
+    uri.id = id
+  end
+
   def to_s
     uri.to_s
   end

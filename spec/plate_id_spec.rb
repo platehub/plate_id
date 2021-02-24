@@ -75,4 +75,21 @@ RSpec.describe PlateID do
     end
   end
 
+  describe "#id" do
+    it "returns id from uri" do
+      expect(subject.id).not_to be_nil
+      expect(subject.id).to eq(subject.uri.id)
+    end
+  end
+
+  describe "#id=" do
+    it "sets uri id" do
+      expect(subject.id).not_to be_nil
+      expect(subject.id).to eq(subject.uri.id)
+      subject.id = nil
+      expect(subject.id).to be_nil
+      expect(subject.uri.id).to be_nil
+    end
+  end
+
 end
