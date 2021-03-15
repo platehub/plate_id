@@ -24,6 +24,7 @@ module URI
       "Ngn::Content::Element" => { host: "Content", base_class: "Element" },
       "Ngn::Content::ContentObject" => { host: "Content", base_class: "ContentObject" },
       "Ngn::Content::SiteTranslation" => { host: "Content", base_class: "SiteTranslation" },
+      "Ngn::Content::AuthenticationObject" => { host: "Content", base_class: "AuthenticationObject" },
 
       "Ngn::ContentModel::ContentField" => { host: "ContentModel", base_class: "ContentField" },
       "Ngn::ContentModel::ContentFieldTab" => { host: "ContentModel", base_class: "ContentFieldGroup" },
