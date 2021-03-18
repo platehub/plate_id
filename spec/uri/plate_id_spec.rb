@@ -50,6 +50,7 @@ RSpec.describe URI::PlateID do
       "Ngn::Content::Element" => "Content/Element",
       "Ngn::Content::ContentObject" => "Content/ContentObject",
       "Ngn::Content::SiteTranslation" => "Content/SiteTranslation",
+      "Ngn::Content::AuthenticationObject" => "Content/AuthenticationObject",
 
       "Ngn::ContentModel::ContentField" => "ContentModel/ContentField",
       "Ngn::ContentModel::ContentFieldTab" => "ContentModel/ContentFieldGroup",
@@ -69,7 +70,11 @@ RSpec.describe URI::PlateID do
 
       "Org::Company" => "Organization/Company",
       "Org::Partner" => "Organization/Partner",
-      "Org::FormMessage" => "Organization/FormMessage"
+      "Org::FormMessage" => "Organization/FormMessage",
+
+      "AccessControl::Policy" => "AccessControl/Policy",
+      "AccessControl::Group" => "AccessControl/Group",
+      "AccessControl::Role" => "AccessControl/Role"
     }.each do |klass, mapped_klass|
       it "returns correct PlateID uri if model_name is #{klass}" do
         expect(described_class.build(model_name: klass, model_id: 1234).to_s).to eq(

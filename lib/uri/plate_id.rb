@@ -47,7 +47,9 @@ module URI
       "Org::FormMessage" => { host: "Organization", base_class: "FormMessage" },
 
       # Access control
-      "AccessControl::Policy" => { host: "AccessControl", base_class: "Policy" }
+      "AccessControl::Policy" => { host: "AccessControl", base_class: "Policy" },
+      "AccessControl::Role" => { host: "AccessControl", base_class: "Role" },
+      "AccessControl::Group" => { host: "AccessControl", base_class: "Group" }
     }
 
     attr_reader :base_class, :id
