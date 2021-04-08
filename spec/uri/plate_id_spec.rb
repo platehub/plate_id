@@ -1,10 +1,10 @@
 RSpec.describe URI::PlateID do
   describe ".parse" do
-    it "parses plateid uri string correctly when id is given" do
+    it "does not raise an error when id is given" do
       expect { described_class.parse("plateid://ContentModel/ElementType/9") }.not_to(raise_error)
     end
 
-    it "parses plateid uri string correctly when no is is given" do
+    it "does not raise an error when no id is given" do
       expect { described_class.parse("plateid://ContentModel/ElementType") }.not_to(raise_error)
     end
 
@@ -82,6 +82,10 @@ RSpec.describe URI::PlateID do
           "plateid://#{mapped_klass}/1234"
         )
       end
+    end
+
+    it "returns nil when invalid class is passed" do
+      expect(described_class.build(model_name: "Ngn::Content::InvalidClass", model_id: 1234)).to be_nil
     end
   end
 end

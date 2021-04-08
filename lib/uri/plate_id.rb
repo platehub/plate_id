@@ -87,7 +87,11 @@ module URI
       #   )
       def build(args)
         comps = Util.make_components_hash(self, args)
+        return unless comps
+
         parts = MAPPING[comps[:model_name]].dup
+        return unless parts
+
         parts[:scheme] = comps[:scheme]
         parts[:id] = comps[:model_id]
         parts[:path] = "/#{parts[:base_class]}/#{CGI.escape(parts[:id].to_s)}"

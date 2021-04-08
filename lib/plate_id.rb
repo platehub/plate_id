@@ -4,7 +4,8 @@ class PlateID
   class << self
 
     def create(model)
-      new(URI::PlateID.create(model))
+      uri = URI::PlateID.create(model)
+      new(uri) if uri
     end
 
     def parse(plate_id)

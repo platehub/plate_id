@@ -2,13 +2,6 @@ RSpec.describe PlateID do
   let(:subject) { described_class.new("plateid://Content/Element/1234") }
 
   describe ".create" do
-    it "calls .new with result of URI::PlateID.create" do
-      element = double(:element)
-      expect(URI::PlateID).to receive(:create).with(element)
-      expect(described_class).to receive(:new)
-      described_class.create(element)
-    end
-
     it "accepts a record and turns it into a plate_id" do
       element = double(:element, id: 4321)
       expect(URI::PlateID).to receive(:create).with(element).and_return("plateid://Content/Element/4321")
@@ -91,5 +84,4 @@ RSpec.describe PlateID do
       expect(subject.uri.id).to be_nil
     end
   end
-
 end
