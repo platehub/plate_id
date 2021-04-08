@@ -39,6 +39,8 @@ RSpec.describe URI::PlateID do
   describe ".build" do
     {
       "Site" => "Base/Site",
+      "Org::Site" => "Base/Site",
+      "Ngn::Site" => "Base/Site",
       "Ngn::Attachment" => "Base/Attachment",
       "Ngn::Domain" => "Base/Domain",
       "Ngn::ClipboardItem" => "Base/ClipboardItem",

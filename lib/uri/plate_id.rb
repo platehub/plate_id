@@ -13,6 +13,8 @@ module URI
 
     MAPPING = {
       "Site" => { host: "Base", base_class: "Site" },
+      "Ngn::Site" => { host: "Base", base_class: "Site" },
+      "Org::Site" => { host: "Base", base_class: "Site" },
       "Ngn::Attachment" => { host: "Base", base_class: "Attachment" },
       "Ngn::Domain" => { host: "Base", base_class: "Domain" },
       "Ngn::ClipboardItem" => { host: "Base", base_class: "ClipboardItem" },
