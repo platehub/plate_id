@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "plate_id"
-  spec.version       = "0.0.9"
+  spec.version       = "0.0.10"
   spec.authors       = ["Kobus Post"]
   spec.email         = ["kobus@getplate.com"]
   spec.homepage      = "https://www.getplate.com"

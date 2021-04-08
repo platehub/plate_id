@@ -16,6 +16,8 @@ module URI
       "Ngn::Site" => { host: "Base", base_class: "Site" },
       "Org::Site" => { host: "Base", base_class: "Site" },
       "Ngn::Attachment" => { host: "Base", base_class: "Attachment" },
+      "Ngn::AttachmentSetting" => { host: "Base", base_class: "AttachmentSetting" },
+      "Ngn::AttachmentFolder" => { host: "Base", base_class: "AttachmentFolder" },
       "Ngn::Domain" => { host: "Base", base_class: "Domain" },
       "Ngn::ClipboardItem" => { host: "Base", base_class: "ClipboardItem" },
       "Ngn::VersionControl::Actions::Action" => { host: "Base", base_class: "VersionControl" },

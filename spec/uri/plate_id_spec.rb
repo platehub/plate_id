@@ -42,6 +42,8 @@ RSpec.describe URI::PlateID do
       "Org::Site" => "Base/Site",
       "Ngn::Site" => "Base/Site",
       "Ngn::Attachment" => "Base/Attachment",
+      "Ngn::AttachmentSetting" => "Base/AttachmentSetting",
+      "Ngn::AttachmentFolder" => "Base/AttachmentFolder",
       "Ngn::Domain" => "Base/Domain",
       "Ngn::ClipboardItem" => "Base/ClipboardItem",
       "Ngn::VersionControl::Actions::Action" => "Base/VersionControl",
