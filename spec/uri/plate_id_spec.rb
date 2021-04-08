@@ -59,6 +59,7 @@ RSpec.describe URI::PlateID do
       "Ngn::ContentModel::SectionType" => "ContentModel/SectionType",
       "Ngn::ContentModel::ElementType" => "ContentModel/ElementType",
       "Ngn::ContentModel::ObjectTypeKind" => "ContentModel/ContentType",
+      "Ngn::ContentModel::ObjectType" => "ContentModel/ObjectType",
       "Ngn::ContentModel::TrayType" => "ContentModel/TrayType",
       "Ngn::ContentModel::AuthenticationType" => "ContentModel/AuthenticationType",
 

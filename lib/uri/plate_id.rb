@@ -33,6 +33,7 @@ module URI
       "Ngn::ContentModel::SectionType" => { host: "ContentModel", base_class: "SectionType" },
       "Ngn::ContentModel::ElementType" => { host: "ContentModel", base_class: "ElementType" },
       "Ngn::ContentModel::ObjectTypeKind" => { host: "ContentModel", base_class: "ContentType" },
+      "Ngn::ContentModel::ObjectType" => { host: "ContentModel", base_class: "ObjectType" }, # TODO: legacy, to be replaced with typed kinds
       "Ngn::ContentModel::TrayType" => { host: "ContentModel", base_class: "TrayType" },
       "Ngn::ContentModel::AuthenticationType" => { host: "ContentModel", base_class: "AuthenticationType" },
 
