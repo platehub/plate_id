@@ -41,7 +41,7 @@ module URI
       "Ngn::ContentModel::TrayType" => { host: "ContentModel", base_class: "TrayType" },
       "Ngn::ContentModel::AuthenticationType" => { host: "ContentModel", base_class: "AuthenticationType" },
 
-      "Ngn::Theming::SiteTheme" => { host: "Theming", base_class: "Theme" },
+      "Ngn::Theming::Theme" => { host: "Theming", base_class: "Theme" },
       "Ngn::Theming::ThemeFile" => { host: "Theming", base_class: "ThemeFile" },
       "Ngn::Theming::Prerender" => { host: "Theming", base_class: "Prerender" },
 
