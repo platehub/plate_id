@@ -47,6 +47,7 @@ RSpec.describe URI::PlateID do
       "Ngn::Domain" => "Base/Domain",
       "Ngn::ClipboardItem" => "Base/ClipboardItem",
       "Ngn::VersionControl::Actions::Action" => "Base/VersionControl",
+      "Ngn::Redirect" => "Base/Redirect",
 
       "Ngn::Content::Post" => "Content/Post",
       "Ngn::Content::Section" => "Content/Section",
@@ -67,7 +68,7 @@ RSpec.describe URI::PlateID do
       "Ngn::ContentModel::TrayType" => "ContentModel/TrayType",
       "Ngn::ContentModel::AuthenticationType" => "ContentModel/AuthenticationType",
 
-      "Ngn::Theming::SiteTheme" => "Theming/Theme",
+      "Ngn::Theming::Theme" => "Theming/Theme",
       "Ngn::Theming::ThemeFile" => "Theming/ThemeFile",
       "Ngn::Theming::Prerender" => "Theming/Prerender",
 
