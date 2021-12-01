@@ -56,6 +56,10 @@ class PlateID
     plate_class&.find_by(id: uri.id)
   end
 
+  def ==(other)
+    to_s == other.to_s
+  end
+
   private
 
   def fetch_uri(plate_id)

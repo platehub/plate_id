@@ -21,6 +21,20 @@ RSpec.describe URI::PlateID do
     end
   end
 
+  describe "#==" do
+    it "returns true when it is has the same uri" do
+      plate_id = described_class.parse("plateid://ContentModel/ElementType/1")
+      other = described_class.parse("plateid://ContentModel/ElementType/1")
+      expect(plate_id == other).to be(true)
+    end
+
+    it "returns false when it does not have the same uri" do
+      plate_id = described_class.parse("plateid://ContentModel/ElementType/1")
+      other = described_class.parse("plateid://ContentModel/ElementType/2")
+      expect(plate_id == other).to be(false)
+    end
+  end
+
   describe ".create" do
     context "with instance passed" do
       let(:model_class) { double(:model_class, name: "Ngn::ContentModel::ElementType") }
