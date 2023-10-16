@@ -104,7 +104,7 @@ module URI
         return unless comps
 
         parts = MAPPING[comps[:model_name]].dup
-        raise "Mapping is missing for this class"
+        raise "Mapping is missing for this class" unless parts
 
         parts[:scheme] = comps[:scheme]
         parts[:id] = comps[:model_id]

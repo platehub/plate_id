@@ -109,7 +109,9 @@ RSpec.describe URI::PlateID do
     end
 
     it "raises error when invalid class is passed" do
-      expect(described_class.build(model_name: "Ngn::Content::InvalidClass", model_id: 1234)).to raise_error("Mapping is missing for this class")
+      expect{
+        described_class.build(model_name: "Ngn::Content::InvalidClass", model_id: 1234)
+      }.to raise_error(StandardError, "Mapping is missing for this class")
     end
   end
 end
