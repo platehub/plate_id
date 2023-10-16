@@ -104,7 +104,7 @@ module URI
         return unless comps
 
         parts = MAPPING[comps[:model_name]].dup
-        raise "There is no PlateID for this class: #{comps[:model_name]}" unless parts
+        raise "There is no PlateID definition for this class: #{comps[:model_name]}" unless parts
 
         parts[:scheme] = comps[:scheme]
         parts[:id] = comps[:model_id]
