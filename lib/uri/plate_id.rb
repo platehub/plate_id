@@ -183,5 +183,6 @@ module URI
     end
   end
 
+  @@schemes ||= {}
   @@schemes["PlateID"] = PlateID
 end
