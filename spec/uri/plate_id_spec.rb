@@ -86,6 +86,10 @@ RSpec.describe URI::PlateID do
       "Ngn::Theming::ThemeFile" => "Theming/ThemeFile",
       "Ngn::Theming::Prerender" => "Theming/Prerender",
 
+      "Ngn::MultiContent::MultiSiteConnection" => "MultiContent/MultiSiteConnection",
+      "Ngn::MultiContent::MultiContentConnection" => "MultiContent/MultiContentConnection",
+      "Ngn::MultiContent::MultiContentRule" => "MultiContent/MultiContentRule",
+
       "Org::Auth::User" => "Auth/User",
       "Api::Integration" => "Auth/ApiIntegration",
 
@@ -104,8 +108,10 @@ RSpec.describe URI::PlateID do
       end
     end
 
-    it "returns nil when invalid class is passed" do
-      expect(described_class.build(model_name: "Ngn::Content::InvalidClass", model_id: 1234)).to be_nil
+    it "raises error when invalid class is passed" do
+      expect{
+        described_class.build(model_name: "Ngn::Content::InvalidClass", model_id: 1234)
+      }.to raise_error(StandardError, "There is no PlateID for this class: Ngn::Content::InvalidClass")
     end
   end
 end
