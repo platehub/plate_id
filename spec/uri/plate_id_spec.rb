@@ -89,6 +89,7 @@ RSpec.describe URI::PlateID do
       "Ngn::MultiContent::MultiSiteConnection" => "MultiContent/MultiSiteConnection",
       "Ngn::MultiContent::MultiContentConnection" => "MultiContent/MultiContentConnection",
       "Ngn::MultiContent::MultiContentRule" => "MultiContent/MultiContentRule",
+      "Ngn::MultiContent::MultiContentRuleAssignment" => "MultiContent/MultiContentRuleAssignment",
 
       "Org::Auth::User" => "Auth/User",
       "Api::Integration" => "Auth/ApiIntegration",
