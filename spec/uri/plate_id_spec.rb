@@ -112,7 +112,7 @@ RSpec.describe URI::PlateID do
     it "raises error when invalid class is passed" do
       expect{
         described_class.build(model_name: "Ngn::Content::InvalidClass", model_id: 1234)
-      }.to raise_error(StandardError, "There is no PlateID for this class: Ngn::Content::InvalidClass")
+      }.to raise_error(RuntimeError, "There is no PlateID definition for this class: Ngn::Content::InvalidClass")
     end
   end
 end
