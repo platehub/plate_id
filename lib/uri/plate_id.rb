@@ -53,6 +53,7 @@ module URI
       "Ngn::MultiContent::MultiSiteConnection" => { host: "MultiContent", base_class: "MultiSiteConnection" },
       "Ngn::MultiContent::MultiContentConnection" => { host: "MultiContent", base_class: "MultiContentConnection" },
       "Ngn::MultiContent::MultiContentRule" => { host: "MultiContent", base_class: "MultiContentRule" },
+      "Ngn::MultiContent::MultiContentRuleAssignment" => { host: "MultiContent", base_class: "MultiContentRuleAssignment" },
 
       "Org::Auth::User" => { host: "Auth", base_class: "User" },
       "Api::Integration" => { host: "Auth", base_class: "ApiIntegration" },

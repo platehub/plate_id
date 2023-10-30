@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    plate_id (0.1.0)
+    plate_id (0.1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -32,4 +32,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   2.3.4
+   2.4.20
