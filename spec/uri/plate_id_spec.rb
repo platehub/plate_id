@@ -86,10 +86,10 @@ RSpec.describe URI::PlateID do
       "Ngn::Theming::ThemeFile" => "Theming/ThemeFile",
       "Ngn::Theming::Prerender" => "Theming/Prerender",
 
-      "Ngn::MultiContent::MultiSiteConnection" => "MultiContent/MultiSiteConnection",
-      "Ngn::MultiContent::MultiContentConnection" => "MultiContent/MultiContentConnection",
-      "Ngn::MultiContent::MultiContentRule" => "MultiContent/MultiContentRule",
-      "Ngn::MultiContent::MultiContentRuleAssignment" => "MultiContent/MultiContentRuleAssignment",
+      "Ngn::MultiContent::SiteConnection" => "MultiContent/SiteConnection",
+      "Ngn::MultiContent::Connection" => "MultiContent/Connection",
+      "Ngn::MultiContent::Rule" => "MultiContent/Rule",
+      "Ngn::MultiContent::RuleAssignment" => "MultiContent/RuleAssignment",
 
       "Org::Auth::User" => "Auth/User",
       "Api::Integration" => "Auth/ApiIntegration",

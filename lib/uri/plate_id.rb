@@ -50,10 +50,10 @@ module URI
       "Ngn::Theming::ThemeFile" => { host: "Theming", base_class: "ThemeFile" },
       "Ngn::Theming::Prerender" => { host: "Theming", base_class: "Prerender" },
 
-      "Ngn::MultiContent::MultiSiteConnection" => { host: "MultiContent", base_class: "MultiSiteConnection" },
-      "Ngn::MultiContent::MultiContentConnection" => { host: "MultiContent", base_class: "MultiContentConnection" },
-      "Ngn::MultiContent::MultiContentRule" => { host: "MultiContent", base_class: "MultiContentRule" },
-      "Ngn::MultiContent::MultiContentRuleAssignment" => { host: "MultiContent", base_class: "MultiContentRuleAssignment" },
+      "Ngn::MultiContent::SiteConnection" => { host: "MultiContent", base_class: "SiteConnection" },
+      "Ngn::MultiContent::Connection" => { host: "MultiContent", base_class: "Connection" },
+      "Ngn::MultiContent::Rule" => { host: "MultiContent", base_class: "Rule" },
+      "Ngn::MultiContent::RuleAssignment" => { host: "MultiContent", base_class: "RuleAssignment" },
 
       "Org::Auth::User" => { host: "Auth", base_class: "User" },
       "Api::Integration" => { host: "Auth", base_class: "ApiIntegration" },
