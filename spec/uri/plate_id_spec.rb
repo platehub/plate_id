@@ -98,6 +98,8 @@ RSpec.describe URI::PlateID do
       "Org::Partner" => "Organization/Partner",
       "Org::FormMessage" => "Organization/FormMessage",
 
+      "Ngn::LiquidProfile" => "Base/LiquidProfile",
+
       "AccessControl::Policy" => "AccessControl/Policy",
       "AccessControl::Group" => "AccessControl/Group",
       "AccessControl::Role" => "AccessControl/Role"
