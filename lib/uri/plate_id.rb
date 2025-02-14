@@ -62,6 +62,8 @@ module URI
       "Org::Partner" => { host: "Organization", base_class: "Partner" },
       "Org::FormMessage" => { host: "Organization", base_class: "FormMessage" },
 
+      "Ngn::LiquidProfile" => { host: "Base", base_class: "LiquidProfile" },
+
       # Access control
       "AccessControl::Policy" => { host: "AccessControl", base_class: "Policy" },
       "AccessControl::Role" => { host: "AccessControl", base_class: "Role" },
